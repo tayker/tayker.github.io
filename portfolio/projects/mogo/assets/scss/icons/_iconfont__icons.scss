@@ -1,0 +1,146 @@
+$global-font-icon: 'social';
+@font-face {
+  font-family: $global-font-icon;
+  src:url("../assets/fonts/myicons.eot");
+  src:url("../assets/fonts/myicons.?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/myicons.woff") format("woff"),
+    url("../assets/fonts/myicons.ttf") format("truetype"),
+    url("../assets/fonts/myicons.#myicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: $global-font-icon;
+
+  &:before {
+    /* Some common icon stuff */
+  }
+
+  &.icon--alarm {
+    &:before {
+      content: $icon-alarm;
+    }
+  }
+  &.icon--arrow {
+    &:before {
+      content: $icon-arrow;
+    }
+  }
+  &.icon--book {
+    &:before {
+      content: $icon-book;
+    }
+  }
+  &.icon--bullseye {
+    &:before {
+      content: $icon-bullseye;
+    }
+  }
+  &.icon--cite {
+    &:before {
+      content: $icon-cite;
+    }
+  }
+  &.icon--computer {
+    &:before {
+      content: $icon-computer;
+    }
+  }
+  &.icon--dribbble {
+    &:before {
+      content: $icon-dribbble;
+    }
+  }
+  &.icon--equalizer {
+    &:before {
+      content: $icon-equalizer;
+    }
+  }
+  &.icon--facebook {
+    &:before {
+      content: $icon-facebook;
+    }
+  }
+  &.icon--google-plus {
+    &:before {
+      content: $icon-google-plus;
+    }
+  }
+  &.icon--graph {
+    &:before {
+      content: $icon-graph;
+    }
+  }
+  &.icon--home {
+    &:before {
+      content: $icon-home;
+    }
+  }
+  &.icon--instagram {
+    &:before {
+      content: $icon-instagram;
+    }
+  }
+  &.icon--landscape {
+    &:before {
+      content: $icon-landscape;
+    }
+  }
+  &.icon--persons {
+    &:before {
+      content: $icon-persons;
+    }
+  }
+  &.icon--pin {
+    &:before {
+      content: $icon-pin;
+    }
+  }
+  &.icon--pinterest {
+    &:before {
+      content: $icon-pinterest;
+    }
+  }
+  &.icon--search {
+    &:before {
+      content: $icon-search;
+    }
+  }
+  &.icon--shopp {
+    &:before {
+      content: $icon-shopp;
+    }
+  }
+  &.icon--speech-buble {
+    &:before {
+      content: $icon-speech-buble;
+    }
+  }
+  &.icon--square {
+    &:before {
+      content: $icon-square;
+    }
+  }
+  &.icon--tumblr {
+    &:before {
+      content: $icon-tumblr;
+    }
+  }
+  &.icon--twitter {
+    &:before {
+      content: $icon-twitter;
+    }
+  }
+  &.icon--views {
+    &:before {
+      content: $icon-views;
+    }
+  }
+  &.icon--youtube {
+    &:before {
+      content: $icon-youtube;
+    }
+  }
+
+}
