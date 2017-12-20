@@ -444,7 +444,11 @@ li {
   font-size: 8rem;
   position: relative;
   color: darkslategrey;
-  text-shadow: 6px 6px 0 #000, -1px -1px 0 #000,   5px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: 6px 6px 0 #000,
+ -1px -1px 0 #000,  
+ 5px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
   -webkit-animation-name: header-h1-anim;
           animation-name: header-h1-anim;
   -webkit-animation-duration: 5s;
@@ -856,7 +860,7 @@ a {
           -o-transition: 300ms;
           transition: 300ms; }
         .section--work-examples__tasks .task:nth-child(n + 4) {
-          margin-top: 2rem; }
+          margin-top: 6rem; }
 
 .footer {
   background-color: #fff;
