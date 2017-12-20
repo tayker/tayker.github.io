@@ -1,0 +1,11 @@
+.header--second{
+        background-color: #d9c26c;
+        align-items: center;
+        
+        &__top-section{
+            align-self: stretch;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 6rem;
+        }
+    }

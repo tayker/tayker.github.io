@@ -1,0 +1,9 @@
+.header--first{
+        background-image: url(../../images/header1_bg.jpg);
+        
+        &__top-section{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24rem;
+        }
+    }

@@ -1,0 +1,29 @@
+.header--seven{
+        background-image: url(../../images/header7_bg.jpg);
+        
+        &__top-section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6.6rem;
+            
+            .link{
+                text-transform: uppercase;
+            }
+        }
+        .secondary-text{
+            max-width: 60rem;
+        }
+        &__features{
+            display: flex;
+            justify-content: flex-start;
+            margin: 6.2rem 0 10rem 0;
+            
+            .feature{
+                margin-right: 6rem;
+            }
+        }
+        .button--down{
+            align-self: center;
+        }
+    }

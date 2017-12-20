@@ -1,0 +1,26 @@
+.header--fifth{
+        background-image: url(../../images/header5_bg.jpg);
+        align-items: center;
+        
+        &__top-section{
+            align-self: stretch;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .link{
+                text-transform: uppercase;
+            }
+        }
+        &__slider{
+            max-width: 40rem;
+            align-self: baseline;
+            
+            .h1{
+                margin: 7rem 0 4rem 0;
+            }
+            .button{
+                margin-top: 3rem;
+            }
+        }
+    }

@@ -1,0 +1,80 @@
+.header--six{
+        background-color: #f2f5f8;
+        align-items: center;
+        
+        &__top-section{
+            align-self: stretch;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8rem;
+            
+            .icon{
+                padding: 0 1rem;
+                margin-right: 1rem;
+                font-size: 1.4rem;
+            }
+            .link{
+                text-transform: none;
+            }
+        }
+        .wrapper-search-block{
+            display: flex;
+            flex-direction: column;
+            
+            &__input{
+                position: relative;
+                
+                .icon{
+                    position: absolute;
+                    left: 30px;
+                    top: 50%;
+                    transform: translatey(-50%);
+                    font-size: 1.6rem;
+                    color: #bec4ca;
+                }
+            }
+            &__search{
+                display: flex;
+                align-items: center;
+                margin: 6rem 0 3.6rem 0;
+                
+                [type="text"]{
+                    width: 51.4rem;
+                    height: 4.8rem;
+                    border-radius: 5px;
+                    border: 2px solid #c6ccd2;
+                    padding:0 1rem 0 4rem;
+                    margin: 0 1.2rem 0 1.2rem;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    
+                    &:focus + span{
+                        color: black;
+                    }
+                }
+                .label{
+                    font-size: 1.6rem;
+                    color: rgb(180, 187, 194);
+                    font-weight: bold;
+                    line-height: 2.25;
+                }
+            }
+            &__hint{
+                align-self: center;
+                
+                .search-text{
+                    font-size: 1.6rem;
+                    color: rgb(56, 55, 55);
+                    line-height: 1.25;
+                    font-weight: bold;
+                }
+            }
+        }
+        .description-text{
+            font-size: 1.4rem;
+            color: rgb(180, 187, 194);
+            line-height: 1.429;
+            margin-top: 17rem;
+        }
+        
+    }

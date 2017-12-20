@@ -1,0 +1,10 @@
+.header--fourth{
+        background-color: #262626;
+        align-items: center;
+        
+        &__top-section{
+            align-self: stretch;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
