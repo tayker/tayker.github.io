@@ -1,0 +1,102 @@
+ body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form{
+            width: 300px;
+            padding: 30px;
+            background-color: lightgrey;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .wrap{
+            margin-top: 20px;
+        }
+        .button{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+        .button--add{
+            background-color: rgb(255, 255, 102);
+        }
+        .button--sort{
+            background-color: lightblue;
+            border-radius: 5px;
+            width: 150px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        [type="checkbox"]{
+            width: 50px;
+            height: 50px;
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        [type="checkbox"]:checked{
+            background-color: forestgreen;
+            box-shadow: inset 0 0 0 2px #fff;
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            width: 370px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        span{
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        [name="task"]{
+            font-size: 20px;
+            width: 200px;
+            padding:0 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .delete{
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            border-radius: 25px;
+            border: none;
+            position: relative;
+            cursor: pointer;
+        }
+        .delete:before{
+            content: 'X';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 25px;
+        }
+        .in-process{
+            color: darkblue;
+        }
+        .checked{
+            color: green;
+            text-decoration: line-through;
+        }
+        .hidden{
+            display: none;
+        }
+        .visible{
+            display: block;
+        }
