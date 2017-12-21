@@ -1021,6 +1021,9 @@ ul{
         outline: none;
     }
 }
+    .media-item{
+        margin: 2rem 20rem;
+    }
     .section{
         
         &__service{
@@ -1063,10 +1066,6 @@ ul{
         }
         &__adaptive-examples{
             
-            &--tablet{
-                
-
-            }
             &--mobile{
                 left: 10%;
             }

@@ -1305,6 +1305,8 @@ ul {
   .h1--header {
     font-size: 12vw;
     outline: none; }
+  .media-item {
+    margin: 2rem 20rem; }
   .section__service .icon:nth-child(n + 4):before {
     top: 40%; }
   .section__service .icon:nth-child(4):before {
