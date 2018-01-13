@@ -1,3 +1,0 @@
-@mixin gradient($gradient-color1, $gradient-color2, $bg-image){
-    background: linear-gradient(to bottom, $gradient-color1, $gradient-color2), $bg-image 45% 50% no-repeat
-}

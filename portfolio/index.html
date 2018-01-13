@@ -2,58 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="">
-    <title>Portfolio</title>
+    <title>Tayker Portfolio</title>
     <link rel="stylesheet" href="dist/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.3/dist/roundslider.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.3/dist/roundslider.min.js"></script>
 </head>
 <body>
     <header class="header">
-        <h1 class="h1">
-            Hi!<br> My name is <a href="https://www.linkedin.com/in/sergey-mazur-844282136/">Serhii</a> and i'm front-end developer.
-        </h1>
-        <nav class="header__menu">
-            <a href="#about">About me</a>
-            <a href="#works">My works</a>
-            <a href="#contacts">Contacts</a>
-        </nav>
-        <button class="button button--follow"><span class="media-btn"></span></button>
-    </header>
-    <section class="section section--info" id="about">
-       <div class="section--info__col1">
-        <h2 class="h2 h2--info">
-            About Me
-        </h2>
-        <div class="description-text">
-            I am highly motivated person looking for new experience in tech sphere. I have good technical skills in HTML, CSS and I am experienced in  popular web developer tools and technologies, such as JSON, AJAX, XML, jQuery, Bootstrap, Foundation, LESS, Gulp, Git, SVN, Photoshop, JIRA, Chrome DevTools, Firebug. Also I have knowledge of JavaScript. I am keen on writing clean and maintainable code and finding user-friendly solutions.  I am also familiar with such methodologies  as Scrum, Agile, Kanban, Waterfall, BEM.
+       <div class="header__content-wrapper">
+            <div class="header__logo">
+                <div class="rounder">
+                    <span class="logo-text">
+                        <a href="https://www.linkedin.com/in/sergey-mazur-844282136/" class="link">
+                            Serhii Mazur
+                        </a> 
+                        <div class="media-text">Portfolio</div> 
+                    </span>
+                </div>
+            </div>
+            <div class="header__nav-wrapper">
+                <nav class="nav">
+                    <a class="link link--nav" href="#introduction">Introduction</a>
+                    <a class="link link--nav" href="#aboutMe">About me</a>
+                    <a class="link link--nav" href="#skills">My Skills</a>
+                    <a class="link link--nav" href="#portfolio">Portfolio</a>
+                    <a class="link link--nav" href="#contacts">Contacts</a>
+                </nav>
             </div>
         </div>
-           <div class="section--info__col2">
-            <img src="images/me.jpg" alt="It's me, hello">
+    </header>
+    <section class="section section--introduction" id="introduction">
+        <div class="section--introduction__content-wrapper">
+            <h1 class="h1">
+                Welcome to My portfolio. <br>
+                 Make a pleasure
+            </h1>
+            <div class="secondary-text">
+                <em>I create, I grow, I do better</em>
+            </div>
         </div>
     </section>
-    <section class="section section--qualities">
-        <ul class="section__qualities">
-            <li class="quality">
-                analytical mind
-            </li>
-            <li class="quality">
-                creative approach
-            </li>
-            <li class="quality">
-                perfectionism
-            </li>
-            <li class="quality">
-                fast rate
-            </li>
-        </ul>
+    <section class="section section--about-me" id="aboutMe">
+       <h2 class="h2">
+                About me
+            </h2>
+        <div class="section--about-me__content-wrapper">
+            <div class="img-wrapper">
+                <img src="images/me.jpg" alt="">
+            </div>
+            <div class="description-text">
+                I am highly motivated person looking for new experience in tech sphere. I have good technical skills in HTML, CSS and I am experienced in  popular web developer tools and technologies, such as JSON, AJAX, XML, jQuery, Bootstrap, Foundation, LESS, Gulp, Git, SVN, Photoshop, JIRA, Chrome DevTools, Firebug. Also I have knowledge of JavaScript. I am keen on writing clean and maintainable code and finding user-friendly solutions.  I am also familiar with such methodologies  as Scrum, Agile, Kanban, Waterfall, BEM.
+            </div>
+        </div>
     </section>
-    <section class="section section--experience">
-        <h2 class="h2 h2--skills">My skills</h2>
-        <ul class="section--experience__skills">
-            <li class="skill">HTML/CSS</li>
+    <section class="section section--skills" id="skills">
+        <h2 class="h2">My Skills</h2>
+        <ul class="section--skills__content-wrapper">
+            <li class="skill">
+                <div class="double-icons"></div>
+                HTML/CSS
+            </li>
             <li class="skill">SASS/LESS</li>
             <li class="skill">JavaScript</li>
             <li class="skill">jQuery</li>
@@ -63,35 +69,89 @@
             <li class="skill">GIT/SVN</li>
         </ul>
     </section>
-    <section class="section section--work-examples" id="works">
-        <h2 class="h2">There is my work</h2>
-        <ul class="section--work-examples__tasks">
-            <li class="task"><a href="projects/forms/index.html" class="task-link"><img src="images/forms.jpg" alt=""></a><div class="technology-text">SASS, HTML5, GULP, GIT, Pixel Perfect</div></li>
-            <li class="task"><a href="projects/mogo/index.html" class="task-link"><img src="images/mogo.jpg" alt=""></a><div class="technology-text">SASS, HTML5, GULP, GIT, Pixel Perfect, jQuery</div></li>
-            <li class="task"><a href="projects/footers/index.html" class="task-link"><img src="images/footers.jpg" alt=""></a><div class="technology-text">SASS, HTML5, GULP, GIT, Pixel Perfect, BEM</div></li>
-            <li class="task"><a href="projects/headers/index.html"><img src="images/headers.jpg" alt=""></a><div class="technology-text">SASS, HTML5, GULP, GIT, Pixel Perfect, BEM, OOCSS, SMACSS, jQuery</div></li>
-            <li class="task"><a href="projects/tooDooList/todo.html"><img src="images/todoList.jpg" alt=""></a><div class="technology-text">HTML, CSS, JavaScript</div></li>
-            <li class="task"><a href="https://tayker.github.io/facility_test_task" class="task-link"><img src="images/facility.jpg" alt=""></a><div class="technology-text">SASS, HTML5, GULP, GIT, Pixel Perfect, Responsive, JQuery</div></li>
-            <li class="task"><a href="https://tayker.github.io/chehlisfoto" class="task-link"><img src="images/chehlisfoto.jpg" alt=""></a><div class="technology-text">SASS, HTML5, GULP, GIT, Responsive, JQuery</div></li>
-        </ul>
-    </section>
-    <footer class="footer" id="contacts">
-        <h1 class="h1 h1--contacts">My contacts</h1>
-        <div class="footer__contacts">
-           <div class="wrap-link">
-              <span class="link-desc">Mail:</span> 
-               <a href="mailto:ser.mazur501@gmail.com" class="email"> ser.mazur501@gmail.com</a>
+    <section class="section section--portfolio" id="portfolio">
+       <h2 class="h2">Portfolio</h2>
+        <div class="section--portfolio__content-wrapper">
+            <div class="work-example-wrapper">
+                <a href="projects/mogo/index.html" class="link link--project"><div class="work-name">MoGo Template</div>
+                    <img src="images/mogo.jpg" alt="">
+                    </a>
+                    <div class="work-description">HTML5, SASS, GULP, GIT, Pixel Perfect</div>
             </div>
-            <div class="wrap-link">
-               <span class="link-desc">Phone:</span>
-                <a class="telephone" href="tel:+380660288198"> (066) 02 88 198</a>
+            <div class="work-example-wrapper">
+                <a href="projects/headers/index.html" class="link link--project"><div class="work-name">Most common headers</div>
+                    <img src="images/headers.jpg" alt="">
+                    </a>
+                    <div class="work-description">HTML5,  SASS, OOCSS, BEM, GULP, GIT, Pixel Perfect, jQuery</div>
             </div>
-            <div class="wrap-link">
-               <span class="link-desc">Skype:</span>
-                <a class="telephone" href="skype:ser.mazur501?add"> ser.mazur501</a>
+            <div class="work-example-wrapper">
+                <a href="projects/footers/index.html" class="link link--project"><div class="work-name">Most common footers</div>
+                    <img src="images/footers.jpg" alt="">
+                    </a>
+                    <div class="work-description">HTML5,  SASS, BEM, GULP, GIT, Pixel Perfect</div>
+            </div>
+            <div class="work-example-wrapper">
+                <a href="projects/forms/index.html" class="link link--project"><div class="work-name">Most commons forms</div>
+                    <img src="images/forms.jpg" alt="">
+                    </a>
+                    <div class="work-description">HTML5,  SASS, BEM, GULP, GIT, Pixel Perfect</div>
+            </div>
+            <div class="work-example-wrapper">
+                <a href="https://tayker.github.io/facility_test_task" class="link link--project"><div class="work-name">Facility Template</div>
+                    <img src="images/facility.jpg" alt="">
+                    </a>
+                    <div class="work-description">HTML5,  SASS, BEM, GULP, GIT, Pixel Perfect, jQuery</div>
+            </div>
+            <div class="work-example-wrapper">
+                <a href="https://tayker.github.io/chehlisfoto" class="link link--project"><div class="work-name">Chehlisfoto Template</div>
+                    <img src="images/chehlisfoto.jpg" alt="">
+                    </a>
+                    <div class="work-description">HTML5,  SASS, BEM, GULP, GIT, jQuery, FTP</div>
+            </div>
+            <div class="work-example-wrapper">
+                <a href="projects/tooDooList/todo.html" class="link link--project">
+                   <div class="work-name">Simple To Do List</div>
+                    <img src="images/todoList.jpg" alt="">
+                </a>
+                <div class="work-description">HTML5, CSS, JavaScript</div>
             </div>
         </div>
+    </section>
+    <footer class="footer" id="contacts">
+        <h2 class="h2">Contact me</h2>
+        <button class="button button--contact" id="popUpBtn">Click to see my contacts</button>
     </footer>
+    <div class="pop-up" id="popUp">
+        <h2 class="h2">My contacts</h2>
+        <div class="pop-up__content-wrapper">
+            <div class="contact-wrapper">
+               <div class="contact-type">
+                   Phone: 
+               </div>
+                <a class="link link--contact" href="tel:0660288198">
+                    (066) 02-88-198
+                </a>
+            </div>
+            <div class="contact-wrapper">
+               <div class="contact-type">
+                   Mail: 
+               </div>
+                <a class="link link--contact" href="mailto:ser.mazur501@gmail.com">
+                    ser.mazur501@gmail.com
+                </a>
+            </div>
+            <div class="contact-wrapper">
+               <div class="contact-type">
+                   Skype: 
+               </div>
+                <a class="link link--contact" href="skype:ser.mazur501">
+                    ser.mazur501
+                </a>
+            </div>
+        </div>
+        <button class="button button--close" id="closePopUp"></button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="dist/js/script.js"></script>
 </body>
 </html>
