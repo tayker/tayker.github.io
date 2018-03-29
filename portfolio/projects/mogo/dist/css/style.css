@@ -7,9 +7,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400");
 html {
   line-height: 1.15;
   /* 1 */
@@ -761,12 +759,16 @@ ul {
     z-index: 999; }
     .header__menu a {
       display: inline-block;
-      color: #ffffff; }
+      color: #ffffff;
+      border-bottom: 3px solid transparent;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
       .header__menu a:not(:last-child) {
         margin-right: 5rem; }
       .header__menu a:hover {
         color: rgba(252, 227, 138, 0.8);
-        border-bottom: 3px solid rgba(252, 227, 138, 0.8); }
+        border-bottom-color: rgba(252, 227, 138, 0.8); }
       .header__menu a:last-child, .header__menu a:nth-child(6) {
         width: 15px;
         height: 15px;
@@ -803,6 +805,23 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     padding-top: 15.2rem; }
+    .header__slider-btns .slick-current .borderok {
+      -webkit-animation-name: main-slider;
+              animation-name: main-slider;
+      -webkit-animation-duration: 3.6s;
+              animation-duration: 3.6s; }
+
+@-webkit-keyframes main-slider {
+  from {
+    width: 20%; }
+  to {
+    width: 100%; } }
+
+@keyframes main-slider {
+  from {
+    width: 20%; }
+  to {
+    width: 100%; } }
     .header__slider-btns .slider-btn {
       width: 25%;
       padding: 2rem 0 2.8rem 0;
@@ -813,7 +832,11 @@ ul {
       text-transform: uppercase;
       line-height: 1.2;
       border-top: 2px solid #fff;
-      position: relative; }
+      position: relative;
+      cursor: pointer;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
       .header__slider-btns .slider-btn:not(:last-child) {
         margin-right: 3rem; }
       .header__slider-btns .slider-btn:hover {
@@ -1305,6 +1328,8 @@ ul {
   .h1--header {
     font-size: 12vw;
     outline: none; }
+  .media-item {
+    margin: 2rem 20rem; }
   .section__service .icon:nth-child(n + 4):before {
     top: 40%; }
   .section__service .icon:nth-child(4):before {

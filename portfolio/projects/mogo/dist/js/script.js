@@ -4,7 +4,7 @@ $(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 30) {
+    if ($(this).scrollTop() > 1) {
         $('.header__menu').css({
             "background": "linear-gradient(to bottom, rgba(243, 129,129, 0.8), rgba(252,227,138, 0.8)"
         });
@@ -20,10 +20,15 @@ $(document).ready(function() {
         $('#map').slideDown('slow')
         $('.section--map').slideUp('fast')
     });
+    
     $('.header__slider').slick({
         arrows: false,
-        autoplay: true
+        autoplay: true,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        asNavFor: '.header__slider-btns'
     });
+    
     $('.slider-quote--img').slick({
         arrows: true,
         autoplay: true,
@@ -37,34 +42,15 @@ $(document).ready(function() {
         prevArrow: $('.button--prev-arrow-media'),
         nextArrow: $('.button--next-arrow-media')
     });
-    $('.header__slider-btns a[data-slide]').click(function(e) {
-        e.preventDefault();
-        let slideno = $(this).data('slide');
-        $('.header__slider').slick('slickGoTo', slideno - 1);
 
+    $('.header__slider-btns').slick({
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.header__slider',
+        focusOnSelect: true
     });
-
-    animateSlider();
-
-    function animateSlider() {
-        $('.active .borderok').animate({
-            "width": "100%"
-        }, 3500, function() {
-            let current = $('.header__slider-btns a').index($('.active'));
-
-            $('.header__slider-btns a').eq(current).find('.borderok').css('width', '20%');
-
-            $('.header__slider-btns a').eq(current).removeClass('active');
-
-            current++;
-            if (current >= $('.header__slider-btns a').length) current = 0;
-
-            $('.header__slider-btns a').eq(current).addClass('active');
-            animateSlider();
-
-        });
-    }
-
+    
     $('.header__menu a[href^="#"]').bind("click", function(e) {
         var anchor = $(this);
         $('html, body').stop().animate({

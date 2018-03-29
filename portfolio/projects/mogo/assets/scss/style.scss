@@ -2,10 +2,7 @@
 @import "variables";
 @import "icons/_iconfont__variables";
 @import "icons/_iconfont__icons";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400');
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
 
 html{
     font-size: 10px;
@@ -350,13 +347,14 @@ ul{
         a{
             display: inline-block;
             color: $header-text-color;
-            
+            border-bottom: 3px solid transparent;
+            transition: $time;
             &:not(:last-child){
                 margin-right: 5rem;
             }
             &:hover{
                 color: $main-color2;
-                border-bottom: 3px solid $main-color2;
+                border-bottom-color:$main-color2;
             }
             &:last-child, &:nth-child(6){
                 width: 15px;
@@ -398,6 +396,20 @@ ul{
         justify-content: center;
         padding-top: 15.2rem;
         
+        .slick-current{
+            .borderok{
+                animation-name: main-slider;
+                animation-duration: 3.6s;
+            }
+            @keyframes main-slider{
+                from{
+                    width: 20%;
+                }
+                to{
+                    width: 100%;
+                }
+            }
+        }
         .slider-btn{
             width: 25%;
             padding: 2rem 0 2.8rem 0;
@@ -409,6 +421,8 @@ ul{
             line-height: 1.2;
             border-top: 2px solid #fff;
             position: relative;
+            cursor: pointer;
+            transition: $time;
             
             &:not(:last-child){
                 margin-right: 3rem;
@@ -425,8 +439,6 @@ ul{
     position: absolute;
     top: -2px;
     background-color: $main-color1;
-//    display: none;
-    
 }
 .section{
     text-align: center;
