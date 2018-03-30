@@ -48,7 +48,16 @@ $(document).ready(function() {
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.header__slider',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 730,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+    }]
     });
     
     $('.header__menu a[href^="#"]').bind("click", function(e) {
